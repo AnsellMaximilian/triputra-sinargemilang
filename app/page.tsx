@@ -16,22 +16,28 @@ export default function Home() {
   return (
     <main className="">
       <div className="flex justify-between items-center gap-8 bg-[url('/hero-bg.png')] bg-secondary text-secondary-foreground">
-        <div className="relative bg-repeat px-4">
-          <h1 className="text-primary font-bold text-6xl mb-4">
+        <div className="relative bg-repeat px-4 py-16">
+          <h1 className="text-primary font-bold text-3xl md:text-6xl mb-4">
             TRIPUTRA SINARGEMILANG
           </h1>
-          <p className="font-semibold text-3xl text-white mb-8">
+          <p className="font-semibold text-xl md:text-3xl text-white mb-8">
             Building Tomorrow: Empowering Construction Excellence with Advanced
             Equipment Solutions
           </p>
-          <Button className="font-bold text-xl" size="lg">
+          <Button className="font-bold text-lg md:text-xl" size="lg">
             Our Services
           </Button>
         </div>
-        <Image src={heroImg} alt="hero image" height={600} />
+        <Image
+          src={heroImg}
+          alt="hero image"
+          className="hidden md:block h-[600px] w-auto"
+        />
       </div>
       <div className="container px-4 mx-auto py-24">
-        <h2 className="text-4xl text-center font-bold mb-8">About Us</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
+          About Us
+        </h2>
         <div className="text-lg">
           <p className="">
             PT. Triputra Sinar Gemilang is a part of TSG Group whichalready in
@@ -61,43 +67,59 @@ export default function Home() {
       </div>
       <div className="bg-primary text-primary-foreground bg-[url('/blue-bg.png')]">
         <div className="container px-4 mx-auto py-24">
-          <h2 className="text-4xl text-center font-bold mb-8">Our Clients</h2>
-          <div className="flex gap-16 justify-center">
-            <Image src={jktPropertindo} alt="Jakarta Propertindo" height={64} />
-            <Image src={adhiKarya} alt="Adhi Karya" height={64} />
-            <Image src={wijayaKarya} alt="Wijaya Karya" height={64} />
+          <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
+            Our Clients
+          </h2>
+          <div className="flex gap-8 md:ap-16 justify-center">
+            <Image
+              src={jktPropertindo}
+              alt="Jakarta Propertindo"
+              className="h-[32px] md:h-[64px] w-auto"
+            />
+            <Image
+              src={adhiKarya}
+              alt="Adhi Karya"
+              className="h-[32px] md:h-[64px] w-auto"
+            />
+            <Image
+              src={wijayaKarya}
+              alt="Wijaya Karya"
+              className="h-[32px] md:h-[64px] w-auto"
+            />
           </div>
-          <div className="text-xl mt-8 text-center">
+          <div className="text-lg md:text-xl mt-8 text-center">
             We have also handled multitudes of privately owned companies&apos;
             projects
           </div>
         </div>
       </div>
       <div className="container px-4 mx-auto py-24">
-        <h2 className="text-4xl text-center font-bold mb-8">Our Services</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
+          Our Services
+        </h2>
         <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-4">
+          <div className="col-span-12 md:col-span-4">
             <ServiceCard
               image={exBreakers}
               title="Excavator Breakers"
               description="Used for demolition of concrete construction or asphalt. Available in various sizes and capacities according to client/customer needs."
             />
           </div>
-          <div className="col-span-4">
+          <div className="col-span-12 md:col-span-4">
             <ServiceCard
               image={exBucket}
               title="Excavator Bucket"
               description="Used for dredging or excavation work,material removal, land clearing and leveling (cut and fill). Also available in various sizes and capacities according to client/customer needs."
             />
           </div>
-          <div className="col-span-4">
+          <div className="col-span-12 md:col-span-4">
             <ServiceCard
               image={airCompressors}
               title="Air Compressors"
               description="The main advantage is its simpleshape and relatively with low noiselevel. Its functionis to produce high-pressure air for the purposes of various construction areas, such as driving jack-hammers, sand-blast machine, etc. Moveable (equipped with wheels) Optional: Jack-hammers"
             />
           </div>
-          <div className="col-span-4 col-start-5">
+          <div className="col-span-12 md:col-span-4 md:col-start-5">
             <ServiceCard
               image={landCompactors}
               title="Land Compactors"
@@ -108,10 +130,10 @@ export default function Home() {
       </div>
       <div className="bg-neutral text-neutral-foreground">
         <div className="container px-4 mx-auto py-24 relative" id="contact-us">
-          <div className="absolute inset-y-0 w-1/3 bg-primary right-0"></div>
-          <div className="flex gap-4 items-center relative">
+          <div className="hidden md:block absolute inset-y-0 w-1/3 bg-primary right-0"></div>
+          <div className="flex gap-16 md:gap-4 items-center relative flex-wrap md:flex-nowrap">
             <div className="">
-              <h2 className="text-4xl font-bold mb-8 text-primary">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
                 Contact Us
               </h2>
               <div className="space-y-4">
