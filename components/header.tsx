@@ -22,7 +22,9 @@ export default function Header() {
   return (
     <header>
       <nav className="p-4 flex items-center gap-8">
-        <Image src={logo} alt="logo" className="w-24" />
+        <Link href="/">
+          <Image src={logo} alt="logo" className="w-24" />
+        </Link>
         <ul className="hidden md:flex items-center gap-6">
           <NavItem text="About Us" href="#about" />
           <NavItem text="Our Clients" href="#clients" />

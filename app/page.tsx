@@ -17,10 +17,10 @@ export default function Home() {
     <main className="">
       <div className="flex justify-between items-center gap-8 bg-[url('/hero-bg.png')] bg-secondary text-secondary-foreground">
         <div className="relative bg-repeat px-4 py-16">
-          <h1 className="text-primary font-bold text-3xl md:text-6xl mb-4">
+          <h1 className="text-primary font-bold text-3xl md:text-4xl lg:text-6xl mb-4">
             TRIPUTRA SINARGEMILANG
           </h1>
-          <p className="font-semibold text-xl md:text-3xl text-white mb-8">
+          <p className="font-semibold text-xl md:text-2xl lg:text-3xl text-white mb-8">
             Building Tomorrow: Empowering Construction Excellence with Advanced
             Equipment Solutions
           </p>
@@ -31,7 +31,7 @@ export default function Home() {
         <Image
           src={heroImg}
           alt="hero image"
-          className="hidden md:block h-[600px] w-auto"
+          className="hidden md:block h-[400px] lg:h-[600px] w-auto"
         />
       </div>
       <div className="container px-4 mx-auto py-24" id="about">
