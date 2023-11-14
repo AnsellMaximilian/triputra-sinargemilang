@@ -107,8 +107,9 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-neutral text-neutral-foreground">
-        <div className="container px-4 mx-auto py-24">
-          <div className="flex gap-4 items-center">
+        <div className="container px-4 mx-auto py-24 relative" id="contact-us">
+          <div className="absolute inset-y-0 w-1/3 bg-primary right-0"></div>
+          <div className="flex gap-4 items-center relative">
             <div className="">
               <h2 className="text-4xl font-bold mb-8 text-primary">
                 Contact Us
@@ -157,7 +158,7 @@ export default function Home() {
               className="border-none"
             ></iframe> */}
             <iframe
-              className="border-none w-[400px] h-[500px] grow"
+              className="relative border-none w-[400px] h-[500px] grow"
               src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d247.9227903897786!2d106.99475047739729!3d-6.162266610900373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.1623256!2d106.9948343!5e0!3m2!1sen!2sid!4v1699943882032!5m2!1sen!2sid"
               allowFullScreen
               loading="lazy"
