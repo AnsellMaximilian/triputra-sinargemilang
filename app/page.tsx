@@ -9,6 +9,8 @@ import exBreakers from "@/assets/images/services/excavator-breakers.png";
 import exBucket from "@/assets/images/services/excavator-bucket.png";
 import airCompressors from "@/assets/images/services/air-compressors.png";
 import landCompactors from "@/assets/images/services/land-compactors.png";
+import logo from "@/assets/images/logo.svg";
+import { MapPin, Phone, Mail, Landmark } from "lucide-react";
 
 export default function Home() {
   return (
@@ -104,8 +106,72 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/*<div>Our Clients</div>
-      <div>Footer</div> */}
+      <div className="bg-neutral text-neutral-foreground">
+        <div className="container px-4 mx-auto py-24">
+          <div className="flex gap-4 items-center">
+            <div className="">
+              <h2 className="text-4xl font-bold mb-8 text-primary">
+                Contact Us
+              </h2>
+              <div className="space-y-4">
+                <div className="flex gap-2 items-center">
+                  <MapPin className="text-red-800" size={32} />
+                  <div>
+                    <div className="font-semibold">Address</div>
+                    <div>
+                      Ruko Arana Blok IX.3 No.15 Harapan Indah Bekasi Jawa Barat
+                      17215
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Phone className="" size={32} />
+                  <div>
+                    <div className="font-semibold">Phone</div>
+                    <div>+62 813 1010 1888 / +62 812 1111 5335</div>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Mail className="" size={32} />
+                  <div>
+                    <div className="font-semibold">Email</div>
+                    <div>triputrasinargemilang@gmail.com</div>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <Landmark className="text-blue-800" size={32} />
+                  <div>
+                    <div className="font-semibold">Rekening</div>
+                    <div>Rekg: 414 292555 BCA/ PT. Triputra Sinar Gemilang</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <iframe
+              src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d126.8637920945285!2d106.99519543078827!3d-6.163337757796335!2m2!1f333.6781818181819!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2sid!4v1699943605398!5m2!1sen!2sid"
+              width="600"
+              height="450"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="border-none"
+            ></iframe> */}
+            <iframe
+              className="border-none w-[400px] h-[500px] grow"
+              src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d247.9227903897786!2d106.99475047739729!3d-6.162266610900373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.1623256!2d106.9948343!5e0!3m2!1sen!2sid!4v1699943882032!5m2!1sen!2sid"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer className="bg-secondary text-secondary-foreground">
+        <div className="container px-4 mx-auto py-12">
+          <Image src={logo} alt="logo" className="w-24" />
+        </div>
+      </footer>
     </main>
   );
 }
