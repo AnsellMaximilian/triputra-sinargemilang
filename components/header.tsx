@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import logo from "@/assets/images/logo.svg";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const NavItem = ({ text, href }: { text: string; href: string }) => {
   return (
@@ -23,12 +24,14 @@ export default function Header() {
       <nav className="p-4 flex items-center gap-8">
         <Image src={logo} alt="logo" className="w-24" />
         <ul className="hidden md:flex items-center gap-6">
-          <NavItem text="About Us" href="#about-us" />
-          <NavItem text="Our Clients" href="/" />
-          <NavItem text="Services" href="/" />
-          <NavItem text="Contact Us" href="/" />
+          <NavItem text="About Us" href="#about" />
+          <NavItem text="Our Clients" href="#clients" />
+          <NavItem text="Services" href="#services" />
+          <NavItem text="Contact Us" href="#contact" />
         </ul>
-        <Button className="ml-auto">Contact</Button>
+        <Link href="#contact" className={cn(buttonVariants(), "ml-auto")}>
+          Contact
+        </Link>
       </nav>
     </header>
   );

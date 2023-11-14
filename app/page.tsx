@@ -34,7 +34,7 @@ export default function Home() {
           className="hidden md:block h-[600px] w-auto"
         />
       </div>
-      <div className="container px-4 mx-auto py-24">
+      <div className="container px-4 mx-auto py-24" id="about">
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
           About Us
         </h2>
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-primary text-primary-foreground bg-[url('/blue-bg.png')]">
-        <div className="container px-4 mx-auto py-24">
+        <div className="container px-4 mx-auto py-24" id="clients">
           <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
             Our Clients
           </h2>
@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container px-4 mx-auto py-24">
+      <div className="container px-4 mx-auto py-24" id="services">
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-8">
           Our Services
         </h2>
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-neutral text-neutral-foreground">
-        <div className="container px-4 mx-auto py-24 relative" id="contact-us">
+        <div className="container px-4 mx-auto py-24 relative" id="contact">
           <div className="hidden md:block absolute inset-y-0 w-1/3 bg-primary right-0"></div>
           <div className="flex gap-16 md:gap-4 items-center relative flex-wrap md:flex-nowrap">
             <div className="">
