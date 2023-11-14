@@ -1,6 +1,6 @@
 import Image from "next/image";
 import heroImg from "@/assets/images/hero.jpg";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import adhiKarya from "@/assets/images/clients/adhi-karya.png";
 import jktPropertindo from "@/assets/images/clients/jakarta-propertindo.png";
 import wijayaKarya from "@/assets/images/clients/wijaya-karya.png";
@@ -11,6 +11,8 @@ import airCompressors from "@/assets/images/services/air-compressors.png";
 import landCompactors from "@/assets/images/services/land-compactors.png";
 import logo from "@/assets/images/logo.svg";
 import { MapPin, Phone, Mail, Landmark } from "lucide-react";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -24,9 +26,15 @@ export default function Home() {
             Building Tomorrow: Empowering Construction Excellence with Advanced
             Equipment Solutions
           </p>
-          <Button className="font-bold text-lg md:text-xl" size="lg">
+          <Link
+            href="#services"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "font-bold text-lg md:text-xl"
+            )}
+          >
             Our Services
-          </Button>
+          </Link>
         </div>
         <Image
           src={heroImg}
